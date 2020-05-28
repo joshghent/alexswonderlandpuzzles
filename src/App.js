@@ -1,24 +1,39 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="logo">
+          <img src="" alt="Alex's Wonderland Puzzles Logo" />
+        </div>
+        <div className="howdy">
+          <p>A new series of Jigsaws aimed at Autistic Children and Young Adults</p>
+          <p>Each puzzle tells a story and aims to teach simple lessons in a fun and unique way.</p>
+          <button className="kickstarter">
+            Be a Part of Alex's Wonderland
+					</button>
+          <button className="email-me">
+            Get Email Updates
+					</button>
+          <form className="email-signup" name="newsletter" method="POST" data-netlify="true">
+            <p>
+              <label>Your Email: <input type="email" name="email" placeholder="Enter your email address" /></label>
+            </p>
+            <p>
+              <button type="submit" className="newsletter-submit">Sign Up!</button>
+            </p>
+          </form>
+        </div>
+        <div className="about">
+          <p>Alex's Wonderland was inspired by my autistic brother-in-law, Alex, assembling a jigsaw.</p>
+          <p>He absolutely loved them but quickly completed them and suffered from the same problem that a lot of jigsaws do - most the pieces were background.</p>
+          <p>There are many number of jigsaws with interesting pictures, but these are often with thousands of pieces which autistic children struggle with.</p>
+          <p>Each of our puzzles contains interesting details and simple lessons, such as taking care of elders and sharing.</p>
+          <p>We hope that you'll join us on our journey of creating these puzzles. If you'd like to be a play-tester or have any ideas, please email me - <a href="mailto:beta@alexswonderlandpuzzles.com">beta@alexswonderlandpuzzles.com</a></p>
+        </div>
+      </div>
     </div>
   );
 }
