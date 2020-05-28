@@ -9,11 +9,11 @@ function App() {
           <img src="" alt="Alex's Wonderland Puzzles Logo" />
         </div>
         <div className="howdy">
-          <p>A new series of Jigsaws aimed at Autistic Children and Young Adults</p>
-          <p>Each puzzle tells a story and aims to teach simple lessons in a fun and unique way.</p>
+          <p className="bold">A new series of Jigsaws aimed at Autistic Children and Young Adults</p>
+          <p className="regular">Each puzzle tells a story and aims to teach simple lessons in a fun and unique way.</p>
           <button className="kickstarter">
-            Be a Part of Alex's Wonderland
-					</button>
+            Be Part of Alex's Wonderland
+          </button>
           <button className="email-me">
             Get Email Updates
 					</button>
@@ -21,9 +21,7 @@ function App() {
             <p>
               <label>Your Email: <input type="email" name="email" placeholder="Enter your email address" /></label>
             </p>
-            <p>
-              <button type="submit" className="newsletter-submit">Sign Up!</button>
-            </p>
+            <button type="submit" className="newsletter-submit">Sign Up!</button>
           </form>
         </div>
         <div className="about">
