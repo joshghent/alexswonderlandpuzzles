@@ -25,7 +25,7 @@ function App() {
 							<input type="email" name="email" placeholder="Enter your Email" className="email" />
 						</p>
 						<button type="submit" className="newsletter-submit">Sign Up!</button>
-					</form>)}
+					<input type="hidden" name="form-name" value="newsletter" /></form>)}
 				</div>
 				<div className="about">
 					<p>Alex's Wonderland was inspired by my autistic brother-in-law, Alex, assembling a jigsaw.</p>
