@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 
 function App() {
+	const [showForm, setShowForm] = React.useState(false);
+	const showFormOnClick = () => setShowForm(true);
 	return (
 		<div className="App">
 			<div className="container">
@@ -14,15 +16,16 @@ function App() {
 					<button className="kickstarter">
 						Be Part of Alex's Wonderland
           </button>
-					<button className="email-me">
+					{!showForm && (<button className="email-me" onClick={showFormOnClick}>
 						Get Email Updates
-					</button>
-					<form className="email-signup" name="newsletter" method="POST" data-netlify="true">
+					</button>)}
+					{showForm && (<form className="email-signup" name="newsletter" method="POST" data-netlify="true" netlify>
 						<p>
-							<label>Your Email: <input type="email" name="email" placeholder="Enter your email address" /></label>
+							<p>We'll email with occasional updates</p>
+							<input type="email" name="email" placeholder="Enter your Email" className="email" />
 						</p>
 						<button type="submit" className="newsletter-submit">Sign Up!</button>
-					</form>
+					</form>)}
 				</div>
 				<div className="about">
 					<p>Alex's Wonderland was inspired by my autistic brother-in-law, Alex, assembling a jigsaw.</p>
