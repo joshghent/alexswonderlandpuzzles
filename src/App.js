@@ -15,7 +15,7 @@ function App() {
 					<p className="regular">Each puzzle tells a story and aims to teach simple lessons in a fun and unique way.</p>
 					<button className="kickstarter">
 						Be Part of Alex's Wonderland
-          </button>
+          				</button><br />
 					{!showForm && (<button className="email-me" onClick={showFormOnClick}>
 						Get Email Updates
 					</button>)}
