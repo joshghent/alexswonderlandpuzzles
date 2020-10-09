@@ -1,20 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@400;700&display=swap");
 
 ::root {
-	--background-color: #fffffe;
-	--headline: #00214d;
-	--paragraph: #1b2d45;
-	--button-text: #00ebc7;
-	--button: #00214d;
+  --background-color: #fffffe;
+  --headline: #00214d;
+  --paragraph: #1b2d45;
+  --button-text: #00ebc7;
+  --button: #00214d;
 
-	--stroke: #00214d;
-	--main: #fffffe;
-	--highlight: #00ebc7;
-	--secondary: #ff5470;
+  --stroke: #00214d;
+  --main: #fffffe;
+  --highlight: #00ebc7;
+  --secondary: #ff5470;
   --tertiary: #fde24f;
 
-  --header-text: 'Balsamiq Sans', 'Comic Sans MS', cursive;
-  --body-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  --header-text: "Balsamiq Sans", "Comic Sans MS", cursive;
+  --body-text: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 .regular {
@@ -30,8 +31,8 @@
 }
 
 body {
-	background-color: #ff5470;
-  font-family: 'Balsamiq Sans', 'Comic Sans MS', cursive;
+  background-color: #ff5470;
+  font-family: "Balsamiq Sans", "Comic Sans MS", cursive;
 }
 
 button {
@@ -43,11 +44,13 @@ button {
   vertical-align: middle;
   text-decoration: none;
   font-size: inherit;
-	font-family: inherit;
+  font-family: inherit;
 }
 
 button.kickstarter {
   font-weight: 700;
+  display: inline-block;
+  margin: 0 auto;
   color: #382b22;
   text-transform: uppercase;
   padding: 1.25em 2em;
@@ -55,15 +58,20 @@ button.kickstarter {
   border: 2px solid #b18597;
   border-radius: 0.75em;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.kickstarter::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -74,31 +82,36 @@ button.kickstarter::before {
   border-radius: inherit;
   box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.75em, -1em);
-          transform: translate3d(0, 0.75em, -1em);
-  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform: translate3d(0, 0.75em, -1em);
+  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.kickstarter:hover {
   background: #ffe9e9;
   -webkit-transform: translate(0, 0.25em);
-          transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
 }
 button.kickstarter:hover::before {
   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.5em, -1em);
-          transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
 }
 button.kickstarter:active {
   background: #ffe9e9;
   -webkit-transform: translate(0em, 0.75em);
-          transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
 }
 button.kickstarter:active::before {
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0, -1em);
-          transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
 }
 
 button.email-me {
@@ -110,15 +123,20 @@ button.email-me {
   border: 2px solid #b18597;
   border-radius: 0.75em;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.email-me::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -129,35 +147,40 @@ button.email-me::before {
   border-radius: inherit;
   box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.75em, -1em);
-          transform: translate3d(0, 0.75em, -1em);
-  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform: translate3d(0, 0.75em, -1em);
+  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.email-me:hover {
   background: #fffcfc;
   -webkit-transform: translate(0, 0.25em);
-          transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
 }
 button.email-me:hover::before {
   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.5em, -1em);
-          transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
 }
 button.email-me:active {
   background: #ffe9e9;
   -webkit-transform: translate(0em, 0.75em);
-          transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
 }
 button.email-me:active::before {
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0, -1em);
-          transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
 }
 
 button.email-me {
-	margin-top: 30px;
+  margin-top: 30px;
   font-weight: 400;
   color: #382b22;
   text-transform: uppercase;
@@ -166,11 +189,16 @@ button.email-me {
   border: 2px solid #b18597;
   border-radius: 0.75em;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
 button.newsletter-submit {
@@ -182,16 +210,21 @@ button.newsletter-submit {
   border: 2px solid #b18597;
   border-radius: 0.75em;
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform-style: preserve-3d;
+  -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 
 button.newsletter-submit::before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   top: 0;
@@ -202,80 +235,86 @@ button.newsletter-submit::before {
   border-radius: inherit;
   box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.75em, -1em);
-          transform: translate3d(0, 0.75em, -1em);
-  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transform: translate3d(0, 0.75em, -1em);
+  -webkit-transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1),
+    -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.newsletter-submit:hover {
   background: #fffcfc;
   -webkit-transform: translate(0, 0.25em);
-          transform: translate(0, 0.25em);
+  transform: translate(0, 0.25em);
 }
 button.newsletter-submit:hover::before {
   box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0.5em, -1em);
-          transform: translate3d(0, 0.5em, -1em);
+  transform: translate3d(0, 0.5em, -1em);
 }
 button.newsletter-submit:active {
   background: #ffe9e9;
   -webkit-transform: translate(0em, 0.75em);
-          transform: translate(0em, 0.75em);
+  transform: translate(0em, 0.75em);
 }
 button.newsletter-submit:active::before {
   box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
   -webkit-transform: translate3d(0, 0, -1em);
-          transform: translate3d(0, 0, -1em);
+  transform: translate3d(0, 0, -1em);
 }
 
 div.container {
   position: relative;
-	display: contents;
 }
 
-div.howdy {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
-	z-index: 5;
+.card {
+  width: 50%;
   padding: 40px 20px;
   margin: 40px 20px;
-	background-color: white;
+  background-color: white;
   border-radius: 10px;
-  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
-}
-
-@media screen and (min-width: 650px) {
-
-  div.howdy {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 30vw;
-  }
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 .about {
-  display: none;
+  width: 30%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 575px) {
+  .flex {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 100%;
+  }
 }
 
 input.email {
-	border-radius: 40px;
-	background: none;
-	font-size: inherit;
-	padding: 20px 40px;
-	text-align: center;
-	background-color: #ccc;
-	border-radius: 0.75em;
-	outline: none;
-	border: none;
+  border-radius: 40px;
+  background: none;
+  font-size: inherit;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 0.75em;
+  outline: none;
+  border: none;
 }
 
 input.email:focus {
-	outline: none;
+  outline: none;
 }
 
 form.email-signup {
-	margin-top: 50px;
+  margin-top: 50px;
 }
