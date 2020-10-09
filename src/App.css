@@ -237,15 +237,23 @@ div.container {
 div.howdy {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  transform: translate(0, -50%);
 	z-index: 5;
   padding: 40px 20px;
   margin: 40px 20px;
 	background-color: white;
   border-radius: 10px;
-	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
-	max-width: 30vw;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.15);
+}
+
+@media screen and (min-width: 650px) {
+
+  div.howdy {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 30vw;
+  }
 }
 
 .about {
