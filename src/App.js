@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Form from "./components/Form/Form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import Logo from "./assets/logo.png";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
       <div className='container'>
         <div className='logo'>
           <img
-            src=''
+            src={Logo}
+            className='logo'
             alt="Alex's Wonderland Puzzles Logo"
           />
         </div>

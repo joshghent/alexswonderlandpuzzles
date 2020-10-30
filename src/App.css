@@ -125,13 +125,17 @@ button.kickstarter:active::before {
   -moz-transition: max-height 0.8s;
   transition: max-height 0.8s;
 }
+.logo {
+  max-width: 30px;
+  margin: 2rem auto 0;
+}
 
 div.container {
   position: relative;
 }
 
 .card {
-  width: 70%;
+  width: 50%;
   padding: 1.5rem;
   margin: 3rem auto 2rem;
   background-color: white;
