@@ -33,8 +33,8 @@ function App() {
             We hope that you'll join us on our journey of
             creating these puzzles. If you'd like to be a
             play-tester or have any ideas, please email me -{" "}
-            <a href='mailto:beta@alexswonderlandpuzzles.com'>
-              beta@alexswonderlandpuzzles.com
+            <a href='mailto:hello@alexswonderlandpuzzles.com'>
+              hello@alexswonderlandpuzzles.com
             </a>
           </p>
           <div
